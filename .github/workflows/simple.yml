@@ -15,3 +15,9 @@ jobs:
           java --version
       - name: testing the debugging secrets for runners and actions
         run: echo "this logs are detailed logs for this workflow"
+      - name: running python from shell and change shell type
+        run: |
+          import platform
+          print
+          (platform.processor())
+        shell: python    
