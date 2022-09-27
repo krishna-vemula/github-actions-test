@@ -13,3 +13,5 @@ jobs:
           node -v
           npm -v
           java --version
+      - name: testing the debugging secrets for runners and actions
+        run: echo "this logs are detailed logs for this workflow"
