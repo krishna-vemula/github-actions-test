@@ -21,3 +21,12 @@ jobs:
           print
           (platform.processor())
         shell: python
+  run-windows-command:
+    runs-on: windows-latest
+    steps:
+      - name: powershell-commands
+        run: Get-Location
+        shell: powershell
+      - name: windows-bash
+        run: pwd 
+        shell: bash
