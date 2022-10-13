@@ -31,3 +31,10 @@ jobs:
       - name: windows-bash
         run: pwd 
         shell: bash
+  run-windows-command:
+    runs-on: windows-latest
+    needs: ["run-windows-command"]
+    steps:
+      - name: windows-bash
+        run: ls -al 
+        shell: bash
